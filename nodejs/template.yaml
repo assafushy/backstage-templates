@@ -4,10 +4,10 @@ kind: Template
 # some metadata about the template itself
 metadata:
   name: v1beta3-demo
-  title: Test Action template
-  description: scaffolder v1beta3 template demo
+  title: NodeJS example Template
+  description: This is a NodeJS example template for demos and Tutorials
 spec:
-  owner: backstage/techdocs-core
+  owner: backstage/assafushy
   type: service
 
   # these are the steps which are rendered in the frontend with the form input
