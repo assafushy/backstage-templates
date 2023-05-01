@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha2
+kind: Template
+metadata:
+  name: my-template
+  description: |
+    A sample template for Backstage.
+  tags:
+    - sample
+    - template
+spec:
+  type: website
+  owner:
+    email: owner@example.com
+  lifecycle: experimental
+  providesApis:
+    - kind: OpenAPI
+      lifecycle: experimental
+      target: https://api.example.com/openapi.yaml
+  providesResources:
+    - kind: website
+      target: https://www.example.com
+      lifecycle: experimental
+  implementsApis:
+    - kind: GraphQL
+      lifecycle: experimental
+      target: https://graphql.example.com
